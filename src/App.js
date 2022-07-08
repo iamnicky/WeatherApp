@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react';
 import './App.css';
-
-import axios from 'axios';
-import { useState } from 'react';
-import Weather from './components/Weather';
 import Main from './components/Main';
 
 
@@ -18,11 +14,9 @@ function App() {
   //   })
   // }, [city]);
 
-
-  console.log(response)
   return (
     <div className=''>
-      
+      <Main/>
 
     </div>
   );
