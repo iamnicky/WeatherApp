@@ -28,17 +28,31 @@ const [weather,setWeather]=useState();
 
 
 
-
+   const currentYear = (new Date().getFullYear())
+   const yearTxt = currentYear === 2022 ? "2022" : "2022 - "+currentYear
 
  
   
   return (
-    <div className={`${darkMode&&'dark-mode'}`}>
-      <Main className='bg-red-200 h-16 w-full'   weather={weather} handleToggleDarkMode={setDarkMode} setCity={setCity} fetchweather={GetData}/>
-       <h1>hello nicky {weather?.main.temp}</h1>
+  
+    <div   style={{ 
+      backgroundImage: `url("https://wallpapercave.com/wp/a1tlfX1.jpg")` 
+    }}>
+  <div className={`${darkMode&&'dark-mode'}` }>
       
-
-    </div>
+   
+     <Main className='bg-red-200 h-16 w-full '   weather={weather} handleToggleDarkMode={setDarkMode} setCity={setCity} fetchweather={GetData}/>
+      
+      
+      <footer className='flex justify-center font-semibold text-lg text-gray-700'>
+           @ { yearTxt } Service - Developed by Nicky ❤️
+      </footer>
+  
+      
+      </div>
+       
+           </div>
+  
   
   );
 }

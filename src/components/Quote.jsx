@@ -25,10 +25,11 @@ useEffect(()=>{
     
     return (
         <div className='bg-violet-600 h-[100vh] w-[600px]'>
-            <h1 className='text-6xl mt-32 ml-16 font- text-black'>My Quote will appear here</h1>
-            <p className='mt-12 ml-16 text-gray-900'><span className='font-bold text-xl'>Quote of the day:</span><span className='text-grey-500 text-xl italic hover:not-italic '>{quote.text}</span></p>
-            <p className='mt-12 ml-16 text-gray-900 font-bold text-xl '>Author:<span className='italic font-semibold'>{quote.author}</span></p>
-            <button onClick={getQuote} className='hover:motion-safe:animate-bounce bg-black text-white ml-16 mt-32 px-8 py-4 rounded-2xl text-lg'>Next Quote</button>
+            <h1 className='text-6xl mt-32 ml-16 font- text-black'>Today's Quote...</h1>
+            <p className='mt-12 ml-16 text-gray-900'><span className='font-bold text-xl'>Quote of the day : </span><span className='text-grey-500 text-xl italic hover:not-italic '>{quote.text}</span></p>
+           {quote.author!==""? (<p className='mt-12 ml-16 text-gray-900 font-bold text-xl '>Author : <span className='italic font-semibold'>{quote.author}</span></p>):null}
+            <button onClick={getQuote} className='
+           hover:motion-safe:animate-bounce bg-black text-white ml-16 mt-32 px-8 py-4 rounded-2xl text-lg'>Next Quote</button>
 
         </div>
     )
