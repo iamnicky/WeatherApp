@@ -44,7 +44,7 @@ const [weather,setWeather]=useState();
      <Main className='bg-red-200 h-16 w-full '   weather={weather} handleToggleDarkMode={setDarkMode} setCity={setCity} fetchweather={GetData}/>
       
       
-      <footer className='flex justify-center font-semibold text-lg text-gray-700'>
+      <footer className='flex justify-center font-semibold text-lg text-gray-100'>
            @ { yearTxt } Service - Developed by Nicky ❤️
       </footer>
   

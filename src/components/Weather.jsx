@@ -26,7 +26,7 @@ let timeSunset=`${sunset.getHours()} : ${sunset.getMinutes()}`
    
     return (
 
-        <div className='bg-violet-400 h-[100vh] px-12 flex flex-col items-center'>
+        <div className='bg-gray-200 h-[100vh] px-12 flex flex-col items-center'>
             <input type='search' placeholder="Search City" onChange={(e)=>{setCity(e.target.value)}} className='px-8 mt-16 bg-slate-400 py-2 text-white text-lg border-none outline-none rounded-xl' />
              
              <button type="submit" onClick={fetchweather} className='p-2 mt-2 text-red-800  rounded-xl border-2 bg-white'>Search</button>
