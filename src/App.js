@@ -38,9 +38,9 @@ const [weather,setWeather]=useState();
     <div   style={{ 
       backgroundImage: `url("https://wallpapercave.com/wp/a1tlfX1.jpg")` 
     }}>
-  <div className={`${darkMode&&'dark-mode'}` }>
+  <div className={`${darkMode&& darkMode?'dark-mode':'light-mode'}` }>
       
-   
+     
      <Main className='bg-red-200 h-16 w-full '   weather={weather} handleToggleDarkMode={setDarkMode} setCity={setCity} fetchweather={GetData}/>
       
       

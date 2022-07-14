@@ -12,6 +12,10 @@ code {
     monospace;
 }
 .dark-mode{
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.54);
   min-height: 100vh;
+
 }
+.light-mode{
+  color:coral
+ }
