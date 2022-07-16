@@ -45,7 +45,7 @@ let timeSunset=`${sunset.getHours()} : ${sunset.getMinutes()}`
             {/* <lottie-player className='' src="https://assets5.lottiefiles.com/packages/lf20_cHA3rG.json" background="transparent" speed="1" ></lottie-player> */}
             <img src=''className='mt-12'/>
 
-            <article className='mt-8 py-8 px-12 rounded-lg bg-white shadow-xl flex flex-col items-center justify-center '>
+            <article className='mt-8 py-8 px-12  rounded-lg bg-white shadow-xl flex flex-col items-center justify-center '>
                <h1 className='text-xl font-bold '>{weather?.name}</h1>
                <h1 className='text-7xl font-bold'>{weather?.main.temp}&deg;C</h1>
                <p className='text-gray-900 font-semibold text-3xl mt-8'>{weather?.weather[0].main}</p>
