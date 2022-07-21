@@ -36,7 +36,7 @@ console.log(current);
             <p className='font-mono mt-12 ml-16  '><span className='font-bold text-xl'>Quote of the day : </span><span className='text-grey-500 text-xl italic hover:not-italic '>{quote.text}</span></p>
            {quote.author!==""? (<p className='mt-12 ml-16  font-bold text-xl '>Author : <span className='italic font-semibold'>{quote.author}</span></p>):null}
             <button onClick={getQuote} className='
-            bg-red-500 text-white ml-16 mt-32 hover:shadow-lg hover:shadow-cyan-500/50    px-8 py-4 rounded-2xl text-lg'>Next Quote</button>
+            bg-yellow-300 text-white ml-16 mt-32 hover:shadow-lg hover:shadow-cyan-500/50    px-8 py-4 rounded-2xl text-lg'>Next Quote</button>
 
         </div>
     )
